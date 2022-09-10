@@ -103,7 +103,7 @@ public class BossController : MonoBehaviour
                 canShoot2 = true;
                 canDash = true;
                 backToRotate = true;
-                if (BossHealth.health == 8)
+                if (BossHealth.health <= 6 && !mad)
                 {
                     mad = true;
                     StartCoroutine(Mad());
